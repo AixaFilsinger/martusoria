@@ -55,7 +55,6 @@ const ReproductorMusic = () => {
         ></audio>{" "}
       </div>{" "}
     </section>
-    <CuentaR></CuentaR>
     </article>
    
   );

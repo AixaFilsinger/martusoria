@@ -8,7 +8,7 @@
 body, html, #root {
   width: 100%;
   height: 100%;
- background-color: black;}
+ background-color: black;} 
 
 #root {
   display: flex;
@@ -155,10 +155,10 @@ body{
   accent-color: white; /* barra blanca */
 }
 .repro{
-  background: url(/src/assets/fondo.jpg);
+  background: url(/src/assets/3.jpg);
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 
@@ -182,19 +182,9 @@ body{
     0 0 80px #000;
 
 }
-.contador .d-flex {
-  justify-content: center; /* asegura que el bloque completo esté al medio */
-  gap: 1.5rem;             /* ajusta la distancia entre cada número */
-}
 
 .contador h3 {
   margin-bottom: 0;        /* elimina espacio innecesario debajo del número */
   font-size: 2rem;         /* opcional: agranda números */
-}
-
-.contador small {
-  display: block;
-  margin-top: -2px;        /* acerca el texto chico al número */
-  font-size: 0.9rem;
 }
 
