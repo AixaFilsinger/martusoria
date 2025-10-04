@@ -49,7 +49,7 @@ const CuentaR = () => {
 
         <article>
            <section className='text-center imagenr'>
-            <img src={regresiva} alt="" />
+            <img src={regresiva} alt=""/>
         </section>
         <section className="cuentaRe d-flex flex-column justify-content-center align-items-center text-center">
       <h2 className="h2-cuentaRe ">Faltan</h2>
