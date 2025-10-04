@@ -1,7 +1,7 @@
 import "../StarBackground.css";
 
 const StarBackground = () => {
-  const circles = Array.from({ length: 60 }); // cantidad de estrellas
+  const circles = Array.from({ length: 100 }); // cantidad de estrellas
   return (
     <div className="star-container">
       {circles.map((_, i) => (

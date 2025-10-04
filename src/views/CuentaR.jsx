@@ -47,7 +47,7 @@ const CuentaR = () => {
   }, [targetDate]);
     return (
 
-        <article>
+        <article className='cuentaRegre'>
            <section className='text-center imagenr'>
             <img src={regresiva} alt=""/>
         </section>

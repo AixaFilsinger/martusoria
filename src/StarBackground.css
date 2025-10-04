@@ -44,14 +44,14 @@
   width: 3px;
   height: 3px;
   animation-name: move-slow;
-  animation-duration: 35s;
+  animation-duration: 18s;
 }
 
 .circle-container:nth-child(even) {
   width: 2px;
   height: 2px;
   animation-name: move-fast;
-  animation-duration: 25s;
+  animation-duration: 12s;
 }
 
 @keyframes move-slow {

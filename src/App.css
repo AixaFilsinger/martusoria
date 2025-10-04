@@ -114,6 +114,19 @@ body{
   font-family:'Buffalo', cursive;
   color: white;
   font-size: 2rem;
+  font-weight:500;
+  /* sombra suave para dar profundidad */
+  text-shadow:
+    0 0 3px rgba(0, 0, 0, 0.9),
+    0 0 6px rgba(0, 0, 0, 0.7);
+
+  /* fondo translúcido opcional para mejorar contraste */
+  background: rgba(0, 0, 0, 0.25);
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+
+  /* brillo sutil alrededor */
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
 }
 .music-player-card {
   width: 340px;
@@ -160,7 +173,9 @@ body{
   width: 100%;
   height: 100%;
 }
-
+.cuentaRegre{
+  max-height: 400px;
+}
 
 .cuentaRe {
   position: relative;
@@ -187,4 +202,58 @@ body{
   margin-bottom: 0;        /* elimina espacio innecesario debajo del número */
   font-size: 2rem;         /* opcional: agranda números */
 }
+
+.card3d-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh;  centrado vertical */
+  width: 100%;
+  perspective: 1000px; /* crea la profundidad */
+  background: transparent;
+}
+
+/* Card */
+.card3d {
+  width: 80%;
+  max-width: 320px;
+  padding: 2rem;
+  border: 2px solid white; /* borde blanco sólido */
+  /*border-radius: 10px;  esquinas rectangulares suaves */
+  background: transparent; /* sin fondo gris */
+  color: white;
+  text-align: center;
+  transform: rotateY(0deg) rotateX(0deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow:
+    0 0 0 rgba(255, 255, 255, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Efecto 3D en hover/touch */
+.card3d:hover {
+  transform: rotateY(10deg) rotateX(-5deg) scale(1.03);
+  box-shadow:
+    0 0 25px rgba(255, 255, 255, 0.3),
+    inset 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Texto */
+.card3d h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.card3d p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+
+
+
+
 

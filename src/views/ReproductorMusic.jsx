@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import CuentaR from "./CuentaR";
 const ReproductorMusic = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -24,7 +23,7 @@ const ReproductorMusic = () => {
   };
   return (
     <article className="repro">
-         <section className="container text-center mt-5" data-aos="fade-up">
+         <section className="container text-center mt-5 mb-5" data-aos="fade-up">
       {" "}
       <h3 className="dalePlay mt-5">Dale Play a mi canción favorita</h3>{" "}
       <div className="music-player-card text-center my-4">

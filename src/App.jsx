@@ -4,6 +4,7 @@ import Frase from './views/Frase'
 import ReproductorMusic from './views/ReproductorMusic'
 import CuentaR from './views/CuentaR'
 import StarBackground from './views/StarBackground'
+import Varios from './views/Varios'
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
      <Frase></Frase>
      <ReproductorMusic></ReproductorMusic>
       <CuentaR></CuentaR>
+      <Varios></Varios>
     </>
   )
 }
