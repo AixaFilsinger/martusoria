@@ -130,7 +130,7 @@ const Varios = () => {
         data-aos-easing="ease-in-sine"
       >
         <div className="card3d">
-          <h4>Asistencia</h4>
+          <h4 className="mb-5">Asistencia</h4>
           <div className="card-body">
             <img src={asistencia} alt="" width={100} />
             <p className="mb-2">
