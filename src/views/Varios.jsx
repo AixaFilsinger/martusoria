@@ -45,7 +45,7 @@ const Varios = () => {
           <div className="card-body">
             <img src={copas} alt="" width={150} />
             <p>
-              11 de Noviembre Salón keke House
+              1 de Noviembre Salón keke House
               <br />
               22hs
             </p>
