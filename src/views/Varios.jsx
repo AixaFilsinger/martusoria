@@ -162,7 +162,7 @@ const Varios = () => {
            <h4>Enviar Regalo</h4>
           <div className="card-body">
             <img src={regalo} alt="" width={100} />
-            <p className="mb-2">El mejor regalo que pueda tener será tu presencia</p>
+            <p className="mb-2">El mejor regalo es tu presencia, pero si de todos modos queres hacerme un presente te dejo mi alias</p>
             <button
               className="btn-varios mt-3 mb-5"
               onClick={() => setShowModal(true)}
