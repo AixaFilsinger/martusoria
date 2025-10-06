@@ -52,10 +52,10 @@ const CuentaR = () => {
             <img src={regresiva} alt="" className='imagenR'/>
         </section>
         <section className="cuentaRe d-flex flex-column justify-content-center align-items-center text-center">
-      <h2 className="h2-cuentaRe ms-1 ">Faltan</h2>
+      <h2 className="h2-cuentaRe ">Faltan</h2>
       <aside className="px-2 pb-2">
         <div className="d-flex flex-column align-items-center justify-content-center contador">
-          <div className="d-flex gap-2 ms-3">
+          <div className="d-flex gap-2 ms-2">
             <div className="text-center">
               <h3 className="fw-bold">{timeLeft.days}</h3>
               <small>Días</small>
