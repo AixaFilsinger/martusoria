@@ -26,10 +26,18 @@ const Varios = () => {
           <div className="card-body">
             <img src={misa} alt="" width={100} />
             <p>
-              23 de noviembre Virgen de la Merced
+              26 de Octubre<br/>Capilla Nuestra señora de Lourdes
               <br />
               21:30
             </p>
+            <button
+              className="btn-varios mt-3 mb-5"
+              onClick={() =>
+                window.open("https://maps.app.goo.gl/mRLUnXXakq6DNF1V8")
+              }
+            >
+              CÓMO LLEGAR
+            </button>
             <img src={brillo} alt="" className="brillo brillo-bottom"/>
           </div>
         </div>
@@ -45,7 +53,7 @@ const Varios = () => {
           <div className="card-body">
             <img src={copas} alt="" width={150} />
             <p>
-              1 de Noviembre Salón keke House
+              1 de Noviembre<br/>Salón keke House
               <br />
               22hs
             </p>
