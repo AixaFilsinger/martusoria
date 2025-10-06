@@ -130,6 +130,7 @@ const Varios = () => {
         data-aos-easing="ease-in-sine"
       >
         <div className="card3d">
+          <h4>Asistencia</h4>
           <div className="card-body">
             <img src={asistencia} alt="" width={100} />
             <p className="mb-2">
@@ -139,14 +140,14 @@ const Varios = () => {
               className="btn-varios mt-3 mb-3"
               onClick={() => window.open("https://wa.link/976qfe")}
             >
-              Confirmar Asistencia a Mariana
+              Confirmar a Mariana
             </button>
             <p>Ó</p>
             <button
               className="btn-varios mt-3 mb-3"
               onClick={() => window.open("https://wa.link/zmnytx")}
             >
-              Confirmar Asistencia a Martu
+              Confirmar a Martu
             </button>
           </div>
         </div>
