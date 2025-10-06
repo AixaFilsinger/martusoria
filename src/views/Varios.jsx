@@ -215,7 +215,7 @@ const Varios = () => {
              Compartamos los recuerdos de la noche juntos<br/>¡Subí tus fotos acá!
             </p>
             <img src={qr} alt="" width={200} />
-            <img src={brillo} alt="" className="brillo brillo-bottom"/>
+            
           </div>
         </div>
       </div>
