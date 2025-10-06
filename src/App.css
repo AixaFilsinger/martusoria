@@ -166,12 +166,12 @@ body {
   background-size: cover;
 }
 .imagenR {
-  max-height: 400px;
+  max-height: 380px;
 }
 
 .cuentaRe {
   position: relative;
-  top: -300px; /* mueve la sección hacia arriba sobre la imagen */
+  top: -280px; /* mueve la sección hacia arriba sobre la imagen */
   z-index: 2; /* asegura que quede por encima */
   width: 100%;
   text-align: center;
