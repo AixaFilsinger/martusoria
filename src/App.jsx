@@ -13,9 +13,12 @@ function App() {
     <StarBackground></StarBackground>
      <Portada></Portada>
      <Frase></Frase>
-     <ReproductorMusic></ReproductorMusic>
+     <section className='fondo'>
+      <ReproductorMusic></ReproductorMusic>
       <CuentaR></CuentaR>
       <Varios></Varios>
+     </section>
+     
     </>
   )
 }

@@ -1,4 +1,4 @@
-import regresiva from '../assets/cuentaregresiva.png'
+import regresiva from '../assets/circulo.jpg'
 import { useEffect, useState } from "react";
 
 
@@ -47,9 +47,9 @@ const CuentaR = () => {
   }, [targetDate]);
     return (
 
-        <article className='cuentaRegre'>
+        <article className='cuentaRegre mb-3'>
            <section className='text-center imagenr'>
-            <img src={regresiva} alt=""/>
+            <img src={regresiva} alt="" width={500}/>
         </section>
         <section className="cuentaRe d-flex flex-column justify-content-center align-items-center text-center">
       <h2 className="h2-cuentaRe ms-1 ">Faltan</h2>

@@ -1,4 +1,3 @@
-
 import boladisco from "../assets/Boladisco.png";
 import dressCode from "../assets/Dresscode.png";
 import Notamusical from "../assets/Notamusical.png";
@@ -16,38 +15,37 @@ const Varios = () => {
     <section className="container text-center">
       <div className="card3d-wrapper mb-5">
         <div className="card3d">
-          <img src={misa} alt="" width={100} />
           <h4>Misa</h4>
-          <p>
-            23 de noviembre Virgen de la merced
-            <br />
-            21:30
-          </p>
+          <div className="card-body">
+            <img src={misa} alt="" width={100} />
+            <p>
+              23 de noviembre Virgen de la Merced
+              <br />
+              21:30
+            </p>
+          </div>
         </div>
       </div>
       <div className="card3d-wrapper mb-5">
         <div className="card3d">
-         <img src={copas} alt="" width={150} />
-          <h4
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            Fiesta
-          </h4>
-          <p
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            29 de noviembre <br />
-            21:30
-          </p>
+          <h4>Fiesta</h4>
+          <div className="card-body">
+            <img src={copas} alt="" width={150} />
+            <p>
+              23 de noviembre Virgen de la Merced
+              <br />
+              21:30
+            </p>
+            <h5>¿Donde?</h5>
+            <p>Salon torre Molino</p>
+            <button className="mt-5">COMO LLEGAR</button>
+          </div>
         </div>
       </div>
+     
       <div className="card3d-wrapper mb-5">
         <div className="card3d">
-           <img src={boladisco} alt="" width={100} />
+          <img src={boladisco} alt="" width={100} />
           <h4
             data-aos="fade-right"
             data-aos-offset="300"
@@ -74,7 +72,7 @@ const Varios = () => {
       </div>
       <div className="card3d-wrapper mb-5">
         <div className="card3d">
-           <img src={dressCode} alt="" width={100} />
+          <img src={dressCode} alt="" width={100} />
           <h4
             data-aos="fade-right"
             data-aos-offset="300"
@@ -87,13 +85,14 @@ const Varios = () => {
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            Elegante<br /> Evitar el color rojo
+            Elegante
+            <br /> Evitar el color rojo
           </p>
         </div>
       </div>
       <div className="card3d-wrapper mb-5">
         <div className="card3d">
-            <img src={Notamusical} alt="" width={100} />
+          <img src={Notamusical} alt="" width={100} />
           <h4
             data-aos="fade-right"
             data-aos-offset="300"
@@ -122,7 +121,7 @@ const Varios = () => {
       </div>
       <div className="card3d-wrapper mb-5">
         <div className="card3d">
-           <img src={asistencia} alt="" width={100} />
+          <img src={asistencia} alt="" width={100} />
           <p
             data-aos="fade-right"
             data-aos-offset="300"
@@ -140,7 +139,7 @@ const Varios = () => {
       </div>
       <div className="card3d-wrapper">
         <div className="card3d">
-           <img src={regalo} alt="" width={100} />
+          <img src={regalo} alt="" width={100} />
           <p
             data-aos="fade-right"
             data-aos-offset="300"
@@ -171,7 +170,9 @@ const Varios = () => {
                 <strong>Alias:</strong> roxi.53
               </p>
               <p className="mb-3">
-                <strong>A nombre de:</strong><br/>Roxana Portuese
+                <strong>A nombre de:</strong>
+                <br />
+                Roxana Portuese
               </p>
 
               <button

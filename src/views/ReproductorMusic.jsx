@@ -22,7 +22,7 @@ const ReproductorMusic = () => {
     setProgress(e.target.value);
   };
   return (
-    <article className="repro">
+    <article>
          <section className="container text-center mt-5 mb-5" data-aos="fade-up">
       {" "}
       <h3 className="dalePlay mt-5">Dale Play a mi canción favorita</h3>{" "}

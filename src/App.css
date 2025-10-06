@@ -1,42 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html, #root {
+body,
+html,
+#root {
   width: 100%;
   height: 100%;
- background-color: black;} 
+  background-color: black;
+}
 
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-body{
+body {
   background: black;
 }
 @font-face {
-  font-family: 'Amoresa';
-  src: url('/fonts/Amoresa.woff2') format('woff2'),
-       url('/fonts/Amoresa.woff') format('woff'),
-       url('/fonts/AmoresaAged.woff2') format('woff2'),
-       url('/fonts/AmoresaAged.woff') format('woff');
-       
+  font-family: "Amoresa";
+  src: url("/fonts/Amoresa.woff2") format("woff2"),
+    url("/fonts/Amoresa.woff") format("woff"),
+    url("/fonts/AmoresaAged.woff2") format("woff2"),
+    url("/fonts/AmoresaAged.woff") format("woff");
+
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Buffalo';
-  src: url('/fonts/Buffalo.woff') format('woff');
+  font-family: "Buffalo";
+  src: url("/fonts/Buffalo.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Riwaya";
-  src: url("/fonts/29lt-riwaya-regular.woff") format('woff');
+  src: url("/fonts/29lt-riwaya-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -56,22 +59,22 @@ body{
 }
 .portada {
   background: url(/src/assets/1.jpg) no-repeat center;
-  background-size: cover;   /* o cover si querés que llene */
+  background-size: cover; /* o cover si querés que llene */
   width: 100%;
-  height: 32vh;               /* ocupa casi toda la pantalla */
+  height: 32vh; /* ocupa casi toda la pantalla */
 
   display: flex;
-  flex-direction: column;     /* textos uno debajo del otro */
-  justify-content: center;    /* centra verticalmente */
-  align-items: center;        /* centra horizontalmente */
+  flex-direction: column; /* textos uno debajo del otro */
+  justify-content: center; /* centra verticalmente */
+  align-items: center; /* centra horizontalmente */
   text-align: center;
   margin-bottom: 3rem;
 }
 
 .linea {
-  display: flex;              /* 🔹 coloca elementos en fila */
-  align-items: center;        /* centra verticalmente dentro de la fila */
-  gap: 10px;                  /* espacio entre h1 e imagen */
+  display: flex; /* 🔹 coloca elementos en fila */
+  align-items: center; /* centra verticalmente dentro de la fila */
+  gap: 10px; /* espacio entre h1 e imagen */
   margin-bottom: 4rem;
   margin-top: 4rem;
 }
@@ -80,45 +83,36 @@ body{
 .portada h2 {
   color: white;
   margin: 0;
-  font-family: 'Amoresa', sans-serif;
+  font-family: "Amoresa", sans-serif;
   font-size: 2rem;
 }
-.portada h2{
-  text-shadow: 
-    0 0 5px #ffffff,   /* halo pequeño */
-    0 0 10px #ffffff,  /* halo más grande */
-    0 0 20px #cccccc,  /* un gris suave */
-    0 0 40px #cccccc,  
-    0 0 80px #aaaaaa;  /* luz más difusa */
+.portada h2 {
+  text-shadow: 0 0 5px #ffffff, /* halo pequeño */ 0 0 10px #ffffff,
+    /* halo más grande */ 0 0 20px #cccccc, /* un gris suave */ 0 0 40px #cccccc,
+    0 0 80px #aaaaaa; /* luz más difusa */
 }
 
-
-
-
-
-.frase{
- background-color: white;
- width: 100%;
-   display: flex;
-  flex-direction:row;     /* textos uno debajo del otro */
-  justify-content: center;    /* centra verticalmente */
-  align-items: center;        /* centra horizontalmente */
+.frase {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row; /* textos uno debajo del otro */
+  justify-content: center; /* centra verticalmente */
+  align-items: center; /* centra horizontalmente */
   text-align: center;
 }
-.parrafo{
-  font-family:'Buffalo', cursive;
+.parrafo {
+  font-family: "Buffalo", cursive;
   font-size: 1.5rem;
 }
 
-.dalePlay{
-  font-family:'Buffalo', cursive;
+.dalePlay {
+  font-family: "Buffalo", cursive;
   color: white;
   font-size: 2rem;
-  font-weight:500;
+  font-weight: 500;
   /* sombra suave para dar profundidad */
-  text-shadow:
-    0 0 3px rgba(0, 0, 0, 0.9),
-    0 0 6px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.9), 0 0 6px rgba(0, 0, 0, 0.7);
 
   /* fondo translúcido opcional para mejorar contraste */
   background: rgba(0, 0, 0, 0.25);
@@ -134,7 +128,7 @@ body{
   background: rgba(255, 255, 255, 0.15); /* fondo semi-transparente */
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 25px; /* rectángulo con bordes ovalados */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px); /* efecto vidrio */
   -webkit-backdrop-filter: blur(10px);
   margin: auto;
@@ -158,7 +152,7 @@ body{
 }
 
 .btn-music:hover {
-   background-color: black; /* O tu código de rojo vino preferido */
+  background-color: black; /* O tu código de rojo vino preferido */
   color: white; /* ícono blanco */
 }
 
@@ -167,40 +161,34 @@ body{
   margin-top: 12px;
   accent-color: white; /* barra blanca */
 }
-.repro{
-  background: url(/src/assets/3.jpg);
+.fondo {
+  background: url(/src/assets/fondo1.jpg);
   background-size: cover;
-  width: 100%;
-  height: 100%;
 }
-.cuentaRegre{
-  max-height: 400px;
+.cuentaRegre {
+  max-height: 500px;
 }
 
 .cuentaRe {
   position: relative;
-  top: -250px;      /* mueve la sección hacia arriba sobre la imagen */
-  z-index: 2;      /* asegura que quede por encima */
+  top: -350px; /* mueve la sección hacia arriba sobre la imagen */
+  z-index: 2; /* asegura que quede por encima */
   width: 100%;
   text-align: center;
-  color:black
+  color: black;
+ 
 }
-.cuentaRe h2{
-   font-family:'Buffalo', cursive;
-   font-size: 4rem;
-  color:rgb(30, 30, 30);
-   text-shadow: 
-    0 0 5px #000,
-    0 0 10px #000,
-    0 0 20px #000,
-    0 0 40px #000,
+.cuentaRe h2 {
+  font-family: "Buffalo", cursive;
+  font-size: 4rem;
+  color: rgb(30, 30, 30);
+  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 20px #000, 0 0 40px #000,
     0 0 80px #000;
-
 }
 
 .contador h3 {
-  margin-bottom: 0;        /* elimina espacio innecesario debajo del número */
-  font-size: 2rem;         /* opcional: agranda números */
+  margin-bottom: 0; /* elimina espacio innecesario debajo del número */
+  font-size: 2rem; /* opcional: agranda números */
 }
 
 .card3d-wrapper {
@@ -216,44 +204,52 @@ body{
 /* Card */
 .card3d {
   width: 80%;
-  max-width: 320px;
+  max-width: 500px;
+  min-height: 80vh;
   padding: 2rem;
-  border: 2px solid white; /* borde blanco sólido */
-  /*border-radius: 10px;  esquinas rectangulares suaves */
-  background: transparent; /* sin fondo gris */
+  border: 2px solid white;
+  background: transparent;
   color: white;
   text-align: center;
-  transform: rotateY(0deg) rotateX(0deg);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow:
-    0 0 0 rgba(255, 255, 255, 0),
-    inset 0 0 20px rgba(255, 255, 255, 0.1);
-}
 
-/* Efecto 3D en hover/touch */
-.card3d:hover {
-  transform: rotateY(10deg) rotateX(-5deg) scale(1.03);
-  box-shadow:
-    0 0 25px rgba(255, 255, 255, 0.3),
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* el título arriba */
+  align-items: center;
+
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3),
     inset 0 0 30px rgba(255, 255, 255, 0.2);
 }
 
-/* Texto */
-.card3d h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.7rem;
-  color: white;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+/* 🔹 Título arriba */
+.card3d h4 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  margin-top: 4rem;
+}
+
+/* 🔹 Contenedor del resto del contenido */
+.card3d .card-body {
+  flex: 1; /* ocupa el espacio restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente */
+  align-items: center; /* centra horizontalmente */
+  width: 100%;
+}
+
+/* 🔹 Imagen y texto */
+.card3d img {
+  margin-bottom: 1rem;
 }
 
 .card3d p {
   font-size: 1rem;
-  line-height: 1.4;
   color: #ddd;
+  line-height: 1.4;
+  margin: 0;
 }
-
-
-
-
-
-
