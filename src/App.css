@@ -59,38 +59,55 @@ body {
 }
 .portada {
   background: url(/src/assets/1.jpg) no-repeat center;
-  background-size: cover; /* o cover si querés que llene */
+  background-size: cover;
   width: 100%;
-  height: 32vh; /* ocupa casi toda la pantalla */
-
+  height: 32vh;
   display: flex;
-  flex-direction: column; /* textos uno debajo del otro */
-  justify-content: center; /* centra verticalmente */
-  align-items: center; /* centra horizontalmente */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-bottom: 3rem;
+  color: white;
 }
 
 .linea {
-  display: flex; /* 🔹 coloca elementos en fila */
-  align-items: center; /* centra verticalmente dentro de la fila */
-  gap: 10px; /* espacio entre h1 e imagen */
-  margin-bottom: 4rem;
-  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
 }
 
-.portada h1,
-.portada h2 {
-  color: white;
+.portada h1 {
+  font-family: "Amoresa", sans-serif;
+  font-size: 3rem;
   margin: 0;
+}
+
+.portada h2 {
   font-family: "Amoresa", sans-serif;
   font-size: 2rem;
+  margin: 0;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff,
+    0 0 20px #cccccc, 0 0 40px #cccccc, 0 0 80px #aaaaaa;
 }
-.portada h2 {
-  text-shadow: 0 0 5px #ffffff, /* halo pequeño */ 0 0 10px #ffffff,
-    /* halo más grande */ 0 0 20px #cccccc, /* un gris suave */ 0 0 40px #cccccc,
-    0 0 80px #aaaaaa; /* luz más difusa */
+
+
+.enfoque span {
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: aparecer 0.5s forwards;
 }
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 .frase {
   background-color: white;
@@ -223,6 +240,7 @@ body {
 
 /* 🔹 Título arriba */
 .card3d h4 {
+  font-family: "Riwaya", sans-serif;
   font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -248,8 +266,118 @@ body {
 }
 
 .card3d p {
+   font-family: "Imperial Script", cursive;
   font-size: 1rem;
   color: #ddd;
   line-height: 1.4;
   margin: 0;
+}
+/* 🔹 Contenedor de los círculos */
+.color-palette {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* separación entre círculos */
+  margin-top: 1rem;
+}
+
+/* 🔹 Círculos base */
+.color-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* 🔹 Colores específicos */
+.color-circle.blanco {
+  background-color: #ffffff;
+}
+
+.color-circle.plateado {
+  background: linear-gradient(135deg, #dcdcdc, #a9a9a9);
+}
+
+.color-circle.natural {
+  background-color: #e4d5b7;
+}
+
+.btn-varios {
+  background: linear-gradient(145deg, #c0c0c0, #ffffff);
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow:
+    0 0 15px rgba(255, 255, 255, 0.3),
+    inset 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* 🔹 Efecto hover brillante */
+.btn-varios:hover {
+  background: linear-gradient(145deg, #ffffff, #dcdcdc);
+  color: #000;
+  box-shadow:
+    0 0 25px rgba(255, 255, 255, 0.7),
+    inset 0 0 15px rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+/* 🔹 Versión al hacer click */
+.btn-varios:active {
+  transform: translateY(0);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.5),
+    inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+ 
+.modal-custom {
+  color: #000000;             /* texto oscuro */
+  font-family: 'Nunito', sans-serif;
+}
+.modal-custom p {
+  font-family:'Nunito', sans-serif ;
+  color: #000000;             /* asegura que los párrafos se vean */
+  font-size: 1.5rem;
+  margin: 8px 0;
+}
+
+.btn-varios2 {
+  background: #2c2c2c;
+  color: #fff;
+  border: 2px solid rgb(145, 142, 127);
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  
+}
+
+/* Estilo base del brillo */
+.brillo {
+  position: absolute;
+  width: 80px;  /* ajusta según quieras */
+  opacity: 0.8;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Ubicación del brillo */
+.brillo-top {
+  top: 100px;
+  left: 10px;
+  animation-delay: 1.5s;
+}
+
+.brillo-bottom {
+  bottom: 100px;
+  right: 10px;
+  animation-delay: 1.5s; /* para que no se muevan al mismo tiempo */
 }
