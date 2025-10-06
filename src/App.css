@@ -70,6 +70,7 @@ body {
   text-align: center;
   margin-bottom: 3rem;
   color: white;
+  padding: 10px;
 }
 
 .linea {
@@ -200,13 +201,17 @@ body {
   font-family: "Buffalo", cursive;
   font-size: 4rem;
   color: rgb(30, 30, 30);
-  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 20px #000, 0 0 40px #000,
-    0 0 80px #000;
+  /*text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 20px #000, 0 0 40px #000,
+    0 0 80px #000;*/
 }
 
 .contador h3 {
+   font-family: "Riwaya", cursive;
   margin-bottom: 0; /* elimina espacio innecesario debajo del número */
   font-size: 2rem; /* opcional: agranda números */
+}
+small{
+   font-family: 'Times New Roman', Times, serif
 }
 
 .card3d-wrapper {
@@ -223,7 +228,7 @@ body {
 .card3d {
   width: 80%;
   max-width: 500px;
-  min-height: 80vh;
+  min-height: 60vh;
   padding: 2rem;
   border: 2px solid white;
   background: transparent;
