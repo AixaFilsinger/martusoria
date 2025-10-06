@@ -26,7 +26,7 @@ const Portada = () => {
   </div>
 
   {/* 🔹 Nombre animado abajo */}
-  <h2 className="enfoque">
+  <h2 className="enfoque mb-3">
     {"Martu Soria".split("").map((letra, i) => (
       <span key={i} style={{ animationDelay: `${i * 0.1}s` }}>
         {letra === " " ? "\u00A0" : letra}

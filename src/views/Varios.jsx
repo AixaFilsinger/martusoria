@@ -5,7 +5,7 @@ import copas from "../assets/Copas.png";
 import asistencia from "../assets/invitacion.png";
 import regalo from "../assets/regalo.png";
 import brillo from "../assets/star.png"
-
+import qr from "../assets/qrMartu.jpg"
 import misa from "../assets/misa.png";
 
 import { useState } from "react";
@@ -62,7 +62,7 @@ const Varios = () => {
           <h4>¿Donde?</h4>
           <div className="card-body">
             <img src={boladisco} alt="" width={100} />
-            <p>Country Las Moritas</p>
+            <p className="mb-3">Country Las Moritas</p>
             <button
               className="btn-varios mt-3 mb-5"
               onClick={() =>
@@ -109,7 +109,7 @@ const Varios = () => {
           <h4>PLAYLIST</h4>
           <div className="card-body">
             <img src={Notamusical} alt="" width={100} />
-            <p>¡Creemos la playlist de la noche juntos!</p>
+            <p className="mb-2">¡Creemos la playlist de la noche juntos!</p>
             <button
               className="btn-varios mt-3 mb-5"
               onClick={() =>
@@ -132,14 +132,21 @@ const Varios = () => {
         <div className="card3d">
           <div className="card-body">
             <img src={asistencia} alt="" width={100} />
-            <p>
+            <p className="mb-2">
               Soñé con este día y me gustaría vivirlo con quienes más quiero...
             </p>
             <button
-              className="btn-varios mt-3 mb-5"
+              className="btn-varios mt-3 mb-3"
               onClick={() => window.open("https://wa.link/976qfe")}
             >
-              Confirmar Asistencia
+              Confirmar Asistencia a Mariana
+            </button>
+            <p>Ó</p>
+            <button
+              className="btn-varios mt-3 mb-3"
+              onClick={() => window.open("https://wa.link/zmnytx")}
+            >
+              Confirmar Asistencia a Martu
             </button>
           </div>
         </div>
@@ -151,9 +158,10 @@ const Varios = () => {
         data-aos-easing="ease-in-sine"
       >
         <div className="card3d">
+           <h4>Enviar Regalo</h4>
           <div className="card-body">
             <img src={regalo} alt="" width={100} />
-            <p>El mejor regalo que pueda tener será tu presencia</p>
+            <p className="mb-2">El mejor regalo que pueda tener será tu presencia</p>
             <button
               className="btn-varios mt-3 mb-5"
               onClick={() => setShowModal(true)}
@@ -193,6 +201,33 @@ const Varios = () => {
           </div>
         </div>
       </div>
+       <div
+        className="card3d-wrapper mb-5"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <div className="card3d position-relative">
+          <img src={brillo} alt="" className="brillo brillo-top"/>
+          <h4>Galeria de fotos</h4>
+          <div className="card-body">
+            <p className="mb-5">
+             Compartamos los recuerdos de la noche juntos<br/>¡Subí tus fotos acá!
+            </p>
+            <img src={qr} alt="" width={200} />
+            <img src={brillo} alt="" className="brillo brillo-bottom"/>
+          </div>
+        </div>
+      </div>
+     <article
+        className=" fin d-flex flex-column justify-content-center align-items-center position-relative"
+       
+      >
+        <img src={brillo} alt="" className="brillo brillo-top1" />
+        <h4  data-aos="zoom-in-down">¡No podes faltar!</h4>
+        <h2  data-aos="zoom-in-down">Martu</h2>
+        <img src={brillo} alt="" className="brillo brillo-bottom1" />
+      </article>
     </section>
   );
 };
