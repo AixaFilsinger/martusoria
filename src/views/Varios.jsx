@@ -28,7 +28,7 @@ const Varios = () => {
             <p>
               26 de Octubre<br/>Capilla Nuestra señora de Lourdes
               <br />
-              21:30
+              20hs
             </p>
             <button
               className="btn-varios mt-3 mb-5"

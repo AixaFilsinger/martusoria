@@ -28,7 +28,7 @@ const ReproductorMusic = () => {
       <h3 className="dalePlay mt-5">Dale Play a mi canción favorita</h3>{" "}
       <div className="music-player-card text-center my-4">
         {" "}
-        <p className="song-title">Christina Perri - A Thousand Years</p>{" "}
+        <p className="song-title">Ellie Goulding - Love Me Like You Do</p>{" "}
         <div className="controls d-flex justify-content-center gap-3">
           {" "}
           <button className="btn-music" onClick={togglePlay}>
@@ -48,7 +48,7 @@ const ReproductorMusic = () => {
         />{" "}
         <audio
           ref={audioRef}
-          src="/music/perri.mp3"
+          src="/music/ellie.mp3"
           onTimeUpdate={handleTimeUpdate}
           preload="auto"
         ></audio>{" "}
